@@ -1,6 +1,14 @@
 # iquotes
 
-A new Flutter project.
+Use Quotes package
+
+```
+flutter pub add quotes
+```
+
+```
+flutter run --no-sound-null-safety
+```
 
 ## Getting Started
 
