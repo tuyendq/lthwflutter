@@ -31,6 +31,9 @@ class MyApp extends StatelessWidget {
             child: Text(
               '"Everything is practice." — Pelé',
               textDirection: TextDirection.ltr,
+              style: TextStyle(
+                color: Colors.white,
+              ),
             ),
           ),
         ),
