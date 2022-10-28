@@ -25,6 +25,7 @@ class MyApp extends StatelessWidget {
 
     return const MaterialApp(
       home: Scaffold(
+        backgroundColor: Colors.blueGrey,
         body: SafeArea(
           child: Center(
             child: Text(
