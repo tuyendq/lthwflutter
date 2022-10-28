@@ -33,6 +33,7 @@ class MyApp extends StatelessWidget {
               textDirection: TextDirection.ltr,
               style: TextStyle(
                 color: Colors.white,
+                fontSize: 72,
               ),
             ),
           ),
