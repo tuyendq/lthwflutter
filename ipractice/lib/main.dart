@@ -16,10 +16,28 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Center(
-      child: Text(
-        '"Everything is practice." — Pelé',
-        textDirection: TextDirection.ltr,
+    // return const Center(
+    //   child: Text(
+    //     '"Everything is practice." — Pelé',
+    //     textDirection: TextDirection.ltr,
+    //   ),
+    // );
+
+    return const MaterialApp(
+      home: Scaffold(
+        backgroundColor: Colors.blueGrey,
+        body: SafeArea(
+          child: Center(
+            child: Text(
+              '"Everything is practice." — Pelé',
+              textDirection: TextDirection.ltr,
+              style: TextStyle(
+                color: Colors.white,
+                fontSize: 72,
+              ),
+            ),
+          ),
+        ),
       ),
     );
   }
