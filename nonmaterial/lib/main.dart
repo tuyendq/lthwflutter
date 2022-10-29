@@ -16,7 +16,10 @@ class MyApp extends StatelessWidget {
         child: Text(
           'An example of non-Material app layout.',
           textDirection: TextDirection.ltr,
-          style: TextStyle(color: Colors.white),
+          style: TextStyle(
+            color: Colors.white,
+            fontSize: 32,
+          ),
         ),
       ),
     );
