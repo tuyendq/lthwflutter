@@ -39,32 +39,35 @@ class MyApp extends StatelessWidget {
                   fontWeight: FontWeight.bold,
                 ),
               ),
-              Container(
+              Card(
                 color: Colors.white,
                 margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
-                padding: EdgeInsets.all(10.0),
-                child: Row(children: [
-                  Icon(
-                    Icons.phone,
-                    color: Colors.teal,
-                  ),
-                  SizedBox(
-                    width: 10.0,
-                  ),
-                  Text(
-                    '+84 911 911 911',
-                    style: TextStyle(
-                      color: Colors.teal.shade900,
-                      fontFamily: 'Source Sans Pro',
-                      fontSize: 20.0,
+                // padding: EdgeInsets.all(10.0),
+                child: Padding(
+                  padding: EdgeInsets.all(25.0),
+                  child: Row(children: [
+                    Icon(
+                      Icons.phone,
+                      color: Colors.teal,
                     ),
-                  ),
-                ]),
+                    SizedBox(
+                      width: 10.0,
+                    ),
+                    Text(
+                      '+84 911 911 911',
+                      style: TextStyle(
+                        color: Colors.teal.shade900,
+                        fontFamily: 'Source Sans Pro',
+                        fontSize: 20.0,
+                      ),
+                    ),
+                  ]),
+                ),
               ),
-              Container(
+              Card(
                 color: Colors.white,
                 margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
-                padding: EdgeInsets.all(10.0),
+                // padding: EdgeInsets.all(10.0),
                 child: Row(children: [
                   Icon(
                     Icons.email,
