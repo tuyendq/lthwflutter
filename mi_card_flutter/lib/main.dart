@@ -13,7 +13,11 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         backgroundColor: Colors.teal,
         body: SafeArea(
-          child: Container(),
+          child: Column(
+            children: [
+              Container(),
+            ],
+          ),
         ),
       ),
     );
