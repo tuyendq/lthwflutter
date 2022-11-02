@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
                 backgroundImage: AssetImage('images/monkey.jpeg'),
               ),
               Text(
-                'Anh em cây khế',
+                'Here I am',
                 style: TextStyle(
                   fontFamily: 'Pacifico',
                   color: Colors.white,
@@ -38,6 +38,13 @@ class MyApp extends StatelessWidget {
                   fontSize: 20,
                   letterSpacing: 2.5,
                   fontWeight: FontWeight.bold,
+                ),
+              ),
+              SizedBox(
+                height: 20.0,
+                width: 150.0,
+                child: Divider(
+                  color: Colors.teal.shade100,
                 ),
               ),
               Card(
