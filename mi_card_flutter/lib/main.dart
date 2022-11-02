@@ -23,8 +23,10 @@ class MyApp extends StatelessWidget {
               Text(
                 'Learn . Practice . Share',
                 style: TextStyle(
+                  fontFamily: 'Pacifico',
                   color: Colors.white,
-                  fontSize: 32,
+                  fontSize: 36,
+                  fontWeight: FontWeight.bold,
                 ),
               ),
               Container(),
