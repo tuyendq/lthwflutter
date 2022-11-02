@@ -18,10 +18,10 @@ class MyApp extends StatelessWidget {
               CircleAvatar(
                 radius: 50.0,
                 backgroundColor: Colors.white,
-                backgroundImage: AssetImage('images/ikigai.png'),
+                backgroundImage: AssetImage('images/monkey.jpeg'),
               ),
               Text(
-                'Learn . Practice . Share',
+                'Anh em cây khế',
                 style: TextStyle(
                   fontFamily: 'Pacifico',
                   color: Colors.white,
@@ -30,15 +30,37 @@ class MyApp extends StatelessWidget {
                 ),
               ),
               Text(
-                'Junior Flutter Developer',
+                'Yet another JUNIOR FLUTTER DEVELOPER',
                 style: TextStyle(
-                  fontFamily: 'SourceSansPro',
-                  color: Colors.white,
-                  fontSize: 36,
+                  fontFamily: 'Source Sans Pro',
+                  color: Colors.teal[100],
+                  fontSize: 20,
+                  letterSpacing: 2.5,
                   fontWeight: FontWeight.bold,
                 ),
               ),
-              Container(),
+              Container(
+                color: Colors.white,
+                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+                padding: EdgeInsets.all(10.0),
+                child: Row(children: [
+                  Icon(
+                    Icons.phone,
+                    color: Colors.teal,
+                  ),
+                  SizedBox(
+                    width: 10.0,
+                  ),
+                  Text(
+                    '+84 911 911 911',
+                    style: TextStyle(
+                      color: Colors.teal.shade900,
+                      fontFamily: 'Source Sans Pro',
+                      fontSize: 20.0,
+                    ),
+                  ),
+                ]),
+              ),
             ],
           ),
         ),
