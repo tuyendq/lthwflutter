@@ -31,11 +31,11 @@ class MyApp extends StatelessWidget {
                 ),
               ),
               Text(
-                'Yet another JUNIOR FLUTTER DEVELOPER',
+                'Yet another Junior FLUTTER Developer',
                 style: TextStyle(
                   fontFamily: 'Source Sans Pro',
                   color: Colors.teal[100],
-                  fontSize: 20,
+                  fontSize: 14,
                   letterSpacing: 2.5,
                   fontWeight: FontWeight.bold,
                 ),
