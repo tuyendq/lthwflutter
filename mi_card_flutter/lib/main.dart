@@ -40,43 +40,34 @@ class MyApp extends StatelessWidget {
                 ),
               ),
               Card(
-                color: Colors.white,
+                // color: Colors.white,
                 margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
                 // padding: EdgeInsets.all(10.0),
-                child: Padding(
-                  padding: EdgeInsets.all(25.0),
-                  child: Row(children: [
-                    Icon(
-                      Icons.phone,
-                      color: Colors.teal,
+                child: ListTile(
+                  leading: Icon(
+                    Icons.phone,
+                    color: Colors.teal,
+                  ),
+                  title: Text(
+                    '+84 911 911 911',
+                    style: TextStyle(
+                      color: Colors.teal.shade900,
+                      fontFamily: 'Source Sans Pro',
+                      fontSize: 20.0,
                     ),
-                    SizedBox(
-                      width: 10.0,
-                    ),
-                    Text(
-                      '+84 911 911 911',
-                      style: TextStyle(
-                        color: Colors.teal.shade900,
-                        fontFamily: 'Source Sans Pro',
-                        fontSize: 20.0,
-                      ),
-                    ),
-                  ]),
+                  ),
                 ),
               ),
               Card(
-                color: Colors.white,
+                // color: Colors.white,
                 margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
                 // padding: EdgeInsets.all(10.0),
-                child: Row(children: [
-                  Icon(
+                child: ListTile(
+                  leading: Icon(
                     Icons.email,
                     color: Colors.teal,
                   ),
-                  SizedBox(
-                    width: 10.0,
-                  ),
-                  Text(
+                  title: Text(
                     'user@flutter.com',
                     style: TextStyle(
                       color: Colors.teal.shade900,
@@ -84,7 +75,7 @@ class MyApp extends StatelessWidget {
                       fontSize: 20.0,
                     ),
                   ),
-                ]),
+                ),
               ),
             ],
           ),
