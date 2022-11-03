@@ -1,6 +1,6 @@
 # i_am_rich
 
-A new Flutter project.
+Follow this course: [Flutter: Part 02 Building Apps](https://www.linkedin.com/learning/flutter-part-02-building-apps) by Angela Yu on LinkedIn Learning.
 
 ## Getting Started
 
@@ -14,3 +14,8 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
+
+
+- [https://m3.material.io/](https://m3.material.io/)
+
+
