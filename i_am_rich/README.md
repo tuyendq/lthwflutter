@@ -16,6 +16,17 @@ For help getting started with Flutter development, view the
 samples, guidance on mobile development, and a full API reference.
 
 
+## Resources
+
 - [https://m3.material.io/](https://m3.material.io/)
+
+- [App Icon Generator](https://appicon.co/)
+
+-[https://icons8.com/](https://icons8.com/)
+
+- [www.vecteezy.com](https://www.vecteezy.com)
+
+- [https://canva.com](https://canva.com)
+
 
 

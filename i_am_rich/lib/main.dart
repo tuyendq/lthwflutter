@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
             'I Am Rich',
           ),
         ),
-        body: Center(
+        body: const Center(
           child: Image(
             image: AssetImage('images/diamond.png'),
           ),
