@@ -1,7 +1,7 @@
 #!/bin/sh
 # This is a generated file; do not edit or check into version control.
-export "FLUTTER_ROOT=D:\flutter"
-export "FLUTTER_APPLICATION_PATH=D:\projects\lthwflutter\dicee-flutter"
+export "FLUTTER_ROOT=F:\flutter"
+export "FLUTTER_APPLICATION_PATH=F:\Projects\github\lthwflutter\dicee_flutter"
 export "COCOAPODS_PARALLEL_CODE_SIGN=true"
 export "FLUTTER_TARGET=lib\main.dart"
 export "FLUTTER_BUILD_DIR=build"
