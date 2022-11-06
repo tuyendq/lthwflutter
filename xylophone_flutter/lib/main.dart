@@ -8,7 +8,18 @@ class XylophoneApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         body: SafeArea(
-          child: Container(),
+          child: Column(
+            children: [
+              TextButton(
+                onPressed: () {},
+                child: Container(
+                  height: 20.0,
+                  color: Colors.red,
+                ),
+              ),
+              Container(),
+            ],
+          ),
         ),
       ),
     );
