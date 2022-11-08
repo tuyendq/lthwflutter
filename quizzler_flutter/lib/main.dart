@@ -41,19 +41,25 @@ class _QuizPageState extends State<QuizPage> {
     // ),
   ];
 
+  List<Question> questionBank = [
+    Question(q: 'You can lead a cow down stairs but not up stairs.', a: false),
+    Question(
+        q: 'Approximately one quarter of human bones are in the feet.',
+        a: true),
+    Question(q: 'A slug\'s blood is green.', a: true),
+  ];
+  int questionNumber = 0;
+
+  void updateQuestion() {
+    if (questionNumber < 2) {
+      questionNumber++;
+    } else {
+      questionNumber = 0;
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
-    List<Question> questionBank = [
-      Question(
-          q: 'You can lead a cow down stairs but not up stairs.', a: false),
-      Question(
-          q: 'Approximately one quarter of human bones are in the feet.',
-          a: true),
-      Question(q: 'A slug\'s blood is green.', a: true),
-    ];
-
-    int questionNumber = 0;
-
     return Column(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -93,6 +99,15 @@ class _QuizPageState extends State<QuizPage> {
                     Icons.check,
                     color: Colors.green,
                   ));
+
+                  if (questionBank[questionNumber].questionAnswer == true) {
+                    print('Awsome!');
+                  } else {
+                    print('No! Give it another try!');
+                  }
+                  // questionNumber++;
+                  updateQuestion();
+                  print(questionNumber);
                 });
               },
             ),
@@ -117,6 +132,16 @@ class _QuizPageState extends State<QuizPage> {
                     Icons.close,
                     color: Colors.red,
                   ));
+
+                  if (questionBank[questionNumber].questionAnswer == false) {
+                    print('Excellent!');
+                  } else {
+                    print('Uh oh! Think again!');
+                  }
+
+                  // questionNumber++;
+                  updateQuestion();
+                  print(questionNumber);
                 });
               },
             ),
