@@ -52,7 +52,7 @@ class _QuizPageState extends State<QuizPage> {
   //   Question(q: 'A slug\'s blood is green.', a: true),
   // ];
 
-  int questionTotal = quizBrain.questionBank.length;
+  int questionTotal = quizBrain.getQuestionTotal();
   int questionNumber = 0;
 
   void updateQuestion() {
@@ -75,7 +75,7 @@ class _QuizPageState extends State<QuizPage> {
             padding: EdgeInsets.all(10.0),
             child: Center(
               child: Text(
-                quizBrain.questionBank[questionNumber].questionText,
+                quizBrain.getQuestionText(questionNumber),
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   fontSize: 25.0,
@@ -100,8 +100,7 @@ class _QuizPageState extends State<QuizPage> {
               onPressed: () {
                 //The user picked true.
                 setState(() {
-                  if (quizBrain.questionBank[questionNumber].questionAnswer ==
-                      true) {
+                  if (quizBrain.getQuestionAnswer(questionNumber) == true) {
                     print('Awsome!');
                     scoreKeeper.add(Icon(
                       Icons.check,
@@ -136,8 +135,7 @@ class _QuizPageState extends State<QuizPage> {
               onPressed: () {
                 //The user picked false.
                 setState(() {
-                  if (quizBrain.questionBank[questionNumber].questionAnswer ==
-                      false) {
+                  if (quizBrain.getQuestionAnswer(questionNumber) == false) {
                     print('Excellent!');
                     scoreKeeper.add(Icon(
                       Icons.check,
