@@ -95,19 +95,21 @@ class _QuizPageState extends State<QuizPage> {
               onPressed: () {
                 //The user picked true.
                 setState(() {
-                  scoreKeeper.add(Icon(
-                    Icons.check,
-                    color: Colors.green,
-                  ));
-
                   if (questionBank[questionNumber].questionAnswer == true) {
                     print('Awsome!');
+                    scoreKeeper.add(Icon(
+                      Icons.check,
+                      color: Colors.green,
+                    ));
                   } else {
                     print('No! Give it another try!');
+                    scoreKeeper.add(Icon(
+                      Icons.close,
+                      color: Colors.red,
+                    ));
                   }
                   // questionNumber++;
                   updateQuestion();
-                  print(questionNumber);
                 });
               },
             ),
@@ -128,20 +130,22 @@ class _QuizPageState extends State<QuizPage> {
               onPressed: () {
                 //The user picked false.
                 setState(() {
-                  scoreKeeper.add(Icon(
-                    Icons.close,
-                    color: Colors.red,
-                  ));
-
                   if (questionBank[questionNumber].questionAnswer == false) {
                     print('Excellent!');
+                    scoreKeeper.add(Icon(
+                      Icons.check,
+                      color: Colors.green,
+                    ));
                   } else {
                     print('Uh oh! Think again!');
+                    scoreKeeper.add(Icon(
+                      Icons.close,
+                      color: Colors.red,
+                    ));
                   }
 
                   // questionNumber++;
                   updateQuestion();
-                  print(questionNumber);
                 });
               },
             ),
