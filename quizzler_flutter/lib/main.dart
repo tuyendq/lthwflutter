@@ -115,6 +115,7 @@ class _QuizPageState extends State<QuizPage> {
                   }
                   // questionNumber++;
                   // updateQuestion();
+                  quizBrain.nextQuestion();
                 });
               },
             ),
@@ -151,6 +152,7 @@ class _QuizPageState extends State<QuizPage> {
 
                   // questionNumber++;
                   // updateQuestion();
+                  quizBrain.nextQuestion();
                 });
               },
             ),
