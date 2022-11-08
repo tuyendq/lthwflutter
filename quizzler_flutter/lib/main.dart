@@ -51,10 +51,12 @@ class _QuizPageState extends State<QuizPage> {
   //       a: true),
   //   Question(q: 'A slug\'s blood is green.', a: true),
   // ];
+
+  int questionTotal = quizBrain.questionBank.length;
   int questionNumber = 0;
 
   void updateQuestion() {
-    if (questionNumber < 2) {
+    if (questionNumber < questionTotal - 1) {
       questionNumber++;
     } else {
       questionNumber = 0;
