@@ -29,15 +29,23 @@ class QuizBrain {
         true),
   ];
 
-  String getQuestionText(int questionNumber) {
-    return _questionBank[questionNumber].questionText;
+  int _questionNumber = 0;
+
+  void nextQuestion() {
+    if (_questionNumber < _questionBank.length - 1) {
+      _questionNumber++;
+    }
   }
 
-  bool getQuestionAnswer(int questionNumber) {
-    return _questionBank[questionNumber].questionAnswer;
+  String getQuestionText() {
+    return _questionBank[_questionNumber].questionText;
   }
 
-  int getQuestionTotal() {
-    return _questionBank.length;
+  bool getQuestionAnswer() {
+    return _questionBank[_questionNumber].questionAnswer;
   }
+
+  // int getQuestionTotal() {
+  //   return _questionBank.length;
+  // }
 }
