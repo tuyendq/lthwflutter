@@ -18,19 +18,14 @@ class _InputPageState extends State<InputPage> {
             child: Row(
               children: [
                 Expanded(
-                  child: ReusableCard(),
+                  child: ReusableCard(
+                    color: Color(0xFF101E33),
+                  ),
                 ),
                 Expanded(
-                  child: ReusableCard(),
-                ),
-              ],
-            ),
-          ),
-          Expanded(
-            child: Row(
-              children: [
-                Expanded(
-                  child: ReusableCard(),
+                  child: ReusableCard(
+                    color: Color(0xFF101E33),
+                  ),
                 ),
               ],
             ),
@@ -39,10 +34,25 @@ class _InputPageState extends State<InputPage> {
             child: Row(
               children: [
                 Expanded(
-                  child: ReusableCard(),
+                  child: ReusableCard(
+                    color: Color(0xFF101E33),
+                  ),
+                ),
+              ],
+            ),
+          ),
+          Expanded(
+            child: Row(
+              children: [
+                Expanded(
+                  child: ReusableCard(
+                    color: Color(0xFF101E33),
+                  ),
                 ),
                 Expanded(
-                  child: ReusableCard(),
+                  child: ReusableCard(
+                    color: Color(0xFF101E33),
+                  ),
                 ),
               ],
             ),
@@ -54,9 +64,9 @@ class _InputPageState extends State<InputPage> {
 }
 
 class ReusableCard extends StatelessWidget {
-  const ReusableCard({
-    Key key,
-  }) : super(key: key);
+  final Color color;
+
+  const ReusableCard({Key key, @required this.color}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -65,7 +75,8 @@ class ReusableCard extends StatelessWidget {
       // width: 170.0,
       margin: EdgeInsets.all(15.0),
       decoration: BoxDecoration(
-        color: Color(0xFF101E33),
+        // color: Color(0xFF101E33),
+        color: color,
         borderRadius: BorderRadius.circular(10.0),
       ),
     );
