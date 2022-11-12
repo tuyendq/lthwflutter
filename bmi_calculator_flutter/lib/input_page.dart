@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 const activeCardColor = Color(0xFF101E33);
+const bottomContainerHeight = 80.0;
 
 class InputPage extends StatefulWidget {
   @override
@@ -66,6 +67,20 @@ class _InputPageState extends State<InputPage> {
                   ),
                 ),
               ],
+            ),
+          ),
+          Container(
+            height: bottomContainerHeight,
+            width: double.infinity,
+            color: Color(0xFFEB1555),
+            margin: EdgeInsets.only(top: 10.0),
+            child: Center(
+              child: Text(
+                'CALCULATE BMI',
+                style: TextStyle(
+                  fontSize: 24.0,
+                ),
+              ),
             ),
           ),
         ],
