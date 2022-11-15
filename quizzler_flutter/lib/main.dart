@@ -51,15 +51,17 @@ class _QuizPageState extends State<QuizPage> {
   //       a: true),
   //   Question(q: 'A slug\'s blood is green.', a: true),
   // ];
-  int questionNumber = 0;
 
-  void updateQuestion() {
-    if (questionNumber < 2) {
-      questionNumber++;
-    } else {
-      questionNumber = 0;
-    }
-  }
+  // int questionTotal = quizBrain.getQuestionTotal();
+  // int questionNumber = 0;
+
+  // void updateQuestion() {
+  //   if (questionNumber < questionTotal - 1) {
+  //     questionNumber++;
+  //   } else {
+  //     questionNumber = 0;
+  //   }
+  // }
 
   @override
   Widget build(BuildContext context) {
@@ -73,7 +75,7 @@ class _QuizPageState extends State<QuizPage> {
             padding: EdgeInsets.all(10.0),
             child: Center(
               child: Text(
-                quizBrain.questionBank[questionNumber].questionText,
+                quizBrain.getQuestionText(),
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   fontSize: 25.0,
@@ -98,8 +100,7 @@ class _QuizPageState extends State<QuizPage> {
               onPressed: () {
                 //The user picked true.
                 setState(() {
-                  if (quizBrain.questionBank[questionNumber].questionAnswer ==
-                      true) {
+                  if (quizBrain.getQuestionAnswer() == true) {
                     print('Awsome!');
                     scoreKeeper.add(Icon(
                       Icons.check,
@@ -113,7 +114,8 @@ class _QuizPageState extends State<QuizPage> {
                     ));
                   }
                   // questionNumber++;
-                  updateQuestion();
+                  // updateQuestion();
+                  quizBrain.nextQuestion();
                 });
               },
             ),
@@ -134,8 +136,7 @@ class _QuizPageState extends State<QuizPage> {
               onPressed: () {
                 //The user picked false.
                 setState(() {
-                  if (quizBrain.questionBank[questionNumber].questionAnswer ==
-                      false) {
+                  if (quizBrain.getQuestionAnswer() == false) {
                     print('Excellent!');
                     scoreKeeper.add(Icon(
                       Icons.check,
@@ -150,7 +151,8 @@ class _QuizPageState extends State<QuizPage> {
                   }
 
                   // questionNumber++;
-                  updateQuestion();
+                  // updateQuestion();
+                  quizBrain.nextQuestion();
                 });
               },
             ),
