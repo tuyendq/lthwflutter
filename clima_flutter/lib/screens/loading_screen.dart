@@ -1,9 +1,8 @@
-import 'dart:io';
-
 import 'package:clima/screens/location_screen.dart';
 import 'package:clima/services/location.dart';
 import 'package:clima/services/networking.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_spinkit/flutter_spinkit.dart';
 
 const apiKey = '354461a08029560d19b6e965d0584c9a';
 
